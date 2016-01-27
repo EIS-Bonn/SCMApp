@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- see comment in js/app/github-ttl-editor.js for some links -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SCM App</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/vis.min.css" rel="stylesheet">
+    <script src="js/config.js" defer></script>
+    <script data-main="scm-app" src="js/lib/require.js" defer></script>
+
+    <style type="text/css">
+       #supplyChainNetwork {
+      width: 800px;
+      height: 250px;
+      border: 1px solid lightgray;
+    }
+    </style
+</head>
+
+<body>
+    <section id="message-queue"></section>
+       
+    <div class="container">
+        <header>
+            <div class="page-header">
+                <h1>SCM App Configurator</h1>
+            </div>
+        </header>
+             <form action="">
+            Company name: 
+            <input type="text" name="firstname">
+            <br>
+             Company description: 
+               <textarea name="message" rows="1" cols="30">ThyssenKrupp offers tailored blanks weld steel materials of differing thicknesses.
+              </textarea>
+            </br>
+              Data Endpoint:
+            <input type="text" name="endpoint" size="35">
+              </br>
+              Username:
+            <input type="text" name="endpoint" >
+               </br>
+              Password:
+            <input type="text" name="endpoint" >
+
+            <br> Connections: </br> 
+            <ul> 
+              <li>                
+              <select>
+                      <option value="client">Client</option>
+                      <option value="supplier">Supplier</option>
+              </select>
+                of 
+             <select>
+                      <option value="client1">Iron Mine ZZ</option>
+                      <option value="client">Client</option>
+              </select> </br>
+              </li>
+
+              <li>
+                    <select>
+                      <option value="client">Client</option>
+                      <option value="supplier">Supplier</option>
+              </select>
+                of 
+             <select>
+                           <option value="client22">Global Manufacturing</option>
+              </select>
+              </li>
+              </br>
+              <button type="button" id="button-analytics" >
+                            Add new connection</button>
+            </ul>
+            </form> 
+             </br>
+
+                   <button type="button" id="button-analytics" class="btn btn-primary">Add Supply Chain element</button>
+                   </br>  </br>
+
+        <div class="menu" style="display: none;">
+        </div>
+             <div id="supplyChainNetwork"></div>   
+             </br>  Method:                      
+              <select>
+                      <option value="volvo">Orders Delivered in Full (RL 2.1)</option>
+                      <option value="saab">Order Fullfillment Cycle Time (RS 1.1)</option>
+                      <option value="mercedes">Upside Supply Chain Flexibility (AG 1.1)</option>
+                      <option value="audi">Total Cost to Serve (CO 1.1)</option>
+                      <option value="audi">Return on Supply Chain Fixed Assets (CO 1.2)</option>
+                    </select> 
+           
+                </div>
+   
+
+             </div><!-- /.col-md-9 -->
+    
+
+      
+        </div><!-- /.row -->
+    <hr>
+    </div><!-- /.container -->
+
+
+</body>
+</html>
